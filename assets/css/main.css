@@ -1995,7 +1995,6 @@ input, select, textarea {
 
 		.features section {
 			padding: 3.5em 3em 1em 7em ;
-			width: 50%;
 			border-top: solid 1px rgba(255, 255, 255, 0.15);
 			position: relative;
 		}
@@ -2789,18 +2788,25 @@ input, select, textarea {
 /* Contact */
 
 	ul.contact {
+		display: flex;
 		list-style: none;
 		padding: 0;
 	}
 
 		ul.contact > li {
 			padding: 0;
-			margin: 1.5em 0 0 0;
+			margin: 0 0 0 2.5em;
 		}
 
 			ul.contact > li:first-child {
 				margin-top: 0;
 			}
+
+	@media screen and (max-width: 480px) {
+		ul.contact {
+			display: block;
+		}
+	}
 
 /* Icons */
 

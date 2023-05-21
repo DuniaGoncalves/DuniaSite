@@ -7,15 +7,22 @@
 /* Contact */
 
 	ul.contact {
+		display: flex;
 		list-style: none;
 		padding: 0;
 
 		> li {
 			padding: 0;
-			margin: 1.5em 0 0 0;
+			margin:0 0 0  2.5em ;
 
 			&:first-child {
 				margin-top: 0;
+			}
+		}
+
+		@media screen and (max-width: 480px) {
+			ul.contact {
+				display: block;
 			}
 		}
 	}
